@@ -103,3 +103,64 @@ function passwordsCheck() {
         $(this).parent().children(".dot").removeClass("deactive");
     }
 }
+
+document.querySelector(".phone-menu__close").addEventListener("click", (e) => {
+    e.preventDefault()
+    fadeOut(document.querySelector(".phone-menu"))
+})
+document.querySelector(".mburger").addEventListener("click", (e) => {
+    e.preventDefault()
+    fadeIn(document.querySelector(".phone-menu"))
+})
+
+function fadeOut(element) {
+    element.classList.add('hidden');
+    // Optionally, remove the element from the DOM after the fade-out is complete
+    setTimeout(function () {
+        element.style.display = 'none';
+    }, 100); // 1000ms matches the duration of the fade-out
+}
+
+function fadeIn(element) {
+    setTimeout(function () {
+        element.style.display = 'block';
+    }, 100);
+    element.classList.remove('hide'); // Make sure it's visible
+    element.classList.remove('hidden'); // Fade in
+}
+window.onscroll = function () { stickyHeader() };
+
+var header = document.querySelector(".header");
+var headerHeight = header.offsetHeight;
+var stickyPoint = headerHeight * 2;
+
+function stickyHeader() {
+    if (window.pageYOffset > stickyPoint) {
+        if (!header.classList.contains("sticky")) {
+            header.classList.add("sticky");
+            document.body.style.paddingTop = headerHeight + 'px';
+            setTimeout(() => {
+                requestAnimationFrame(function () {
+                    header.classList.add("show");
+                });
+
+            }, 50);
+        }
+    } else {
+        header.classList.remove("sticky", "show");
+        document.body.style.paddingTop = '0';
+    }
+}
+const questionTitles = document.querySelectorAll('.question-item__title');
+
+questionTitles.forEach(title => {
+    title.querySelector("button").addEventListener('click', function () {
+        document.querySelectorAll('.arrow').forEach(arrow => {
+            arrow.classList.remove('reverse');
+        });
+        const arrow = title.querySelector('.arrow');
+        if (arrow) {
+            arrow.classList.toggle('reverse');
+        }
+    });
+});
