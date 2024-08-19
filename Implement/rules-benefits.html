@@ -103,91 +103,203 @@
                             <h1 class="inpage__main-title label label--highlight label--sm text__32 text__black">
                                 قوانین و مزایا
                             </h1>
-                            <div class="rules__desc">
-                                می‌توانی به جای خواندن، <span class="bordered">این صوت را گوش دهی</span>
+                        </div>
+
+                        <div class="rules__desc text__center">
+                            می‌توانی به جای خواندن، <span class="bordered">این صوت را گوش دهی</span>
+                        </div>
+                        <div class="rules__audio audio">
+                            <audio id="player" class="plyr">
+                                <source src="/path/to/audio.mp3" type="audio/mp3" />
+                                <source src="/path/to/audio.ogg" type="audio/ogg" />
+                            </audio>
+                        </div>
+                        <div class="rules__content">
+                            <div class="rules__item rule">
+                                <div class="text__semibold text__16 text__green">قانون اول</div>
+                                <div class="text__16 text__gray">برای عضویت در این طرح هیچ محدودیت سنی وجود ندارد.
+                                </div>
                             </div>
-                            <div class="rules__audio"></div>
-                            <div class="rules__content">
-                                <div class="rules__item rule">
-                                    <div class="text__semibold text__16">قانون اول</div>
-                                    <div class="text__16 text__gray">برای عضویت در این طرح هیچ محدودیت سنی وجود ندارد.
-                                    </div>
+                            <div class="rules__item rule">
+                                <div class="text__semibold text__16 text__green">قانون دوم</div>
+                                <div class="text__16 text__gray">
+                                    چنانچه شخصی پیش از 6 ماه (180 روز پیاپی) عضویت در گروه فوت کند، مجموعه هیچ هزینه
+                                    ای بابت نماز و روزه قضا و یا رد مظالم او از اعضای گروه جمع آوری و پرداخت نخواهد
+                                    کرد و فقط تا زمانی که گروه باقی باشد در ثواب اعمال ماهانه گروه سهیم خواهد بود.
                                 </div>
-                                <div class="rules__item rule">
-                                    <div class="text__semibold text__16">قانون دوم</div>
-                                    <div class="text__16 text__gray">
-                                        چنانچه شخصی پیش از 6 ماه (180 روز پیاپی) عضویت در گروه فوت کند، مجموعه هیچ هزینه
-                                        ای بابت نماز و روزه قضا و یا رد مظالم او از اعضای گروه جمع آوری و پرداخت نخواهد
-                                        کرد و فقط تا زمانی که گروه باقی باشد در ثواب اعمال ماهانه گروه سهیم خواهد بود.
-                                    </div>
+                            </div>
+                            <div class="rules__item rule">
+                                <div class="text__semibold text__16 text__green">قانون سوم</div>
+                                <div class="text__16 text__gray">
+                                    چنانچه در ابتدای عضویت در گروه، در طرح نماز یا روزه قضا و یا رد مظالم شرکت
+                                    ننمایید و پس از چند ماه عضویت در گروه بخواهید در طرح نماز و روزه و رد مظالم شرکت
+                                    نمایید عضویت 6 ماهه شما از زمان پذیرش طرح نماز و روزه و رد مظالم محاسبه میگردد
+                                    نه از زمان عضویت در گروه باقیات الصالحات.
                                 </div>
-                                <div class="rules__item rule">
-                                    <div class="text__semibold text__16">قانون سوم</div>
-                                    <div class="text__16 text__gray">
-                                        چنانچه در ابتدای عضویت در گروه، در طرح نماز یا روزه قضا و یا رد مظالم شرکت
-                                        ننمایید و پس از چند ماه عضویت در گروه بخواهید در طرح نماز و روزه و رد مظالم شرکت
-                                        نمایید عضویت 6 ماهه شما از زمان پذیرش طرح نماز و روزه و رد مظالم محاسبه میگردد
-                                        نه از زمان عضویت در گروه باقیات الصالحات.
-                                    </div>
+                            </div>
+                            <div class="rules__item rule">
+                                <div class="text__semibold text__16 text__green">قانون چهارم</div>
+                                <div class="text__16 text__gray">
+                                    شما میتوانید اموات مورد نظرتان را در طرح ثبت نام نمایید و اعمال ماهانه را از طرف
+                                    آنها انجام دهید.
                                 </div>
-                                <div class="rules__item rule">
-                                    <div class="text__semibold text__16">قانون چهارم</div>
-                                    <div class="text__16 text__gray">
-                                        شما میتوانید اموات مورد نظرتان را در طرح ثبت نام نمایید و اعمال ماهانه را از طرف
-                                        آنها انجام دهید.
-                                    </div>
+                            </div>
+                            <div class="rules__item rule">
+                                <div class="text__semibold text__16 text__green">قانون ششم</div>
+                                <div class="text__16 text__gray">
+                                    اگر در یک ماه انجام اعمال را فراموش کنید و یا به هر دلیلی اعمال را انجام ندهید
+                                    دین شرعی بر گردن شما نمیباشد و فقط در ثواب اعمال گروه در آن ماه سهیم نخواهید بود
+                                    و البته میتوانید اعمال را در ماه بعد انجام دهید تا از فیض ثواب اعمال گروه در ماه
+                                    قبل بهره‌مند شوید.
                                 </div>
-                                <div class="rules__item rule">
-                                    <div class="text__semibold text__16">قانون ششم</div>
-                                    <div class="text__16 text__gray">
-                                        اگر در یک ماه انجام اعمال را فراموش کنید و یا به هر دلیلی اعمال را انجام ندهید
-                                        دین شرعی بر گردن شما نمیباشد و فقط در ثواب اعمال گروه در آن ماه سهیم نخواهید بود
-                                        و البته میتوانید اعمال را در ماه بعد انجام دهید تا از فیض ثواب اعمال گروه در ماه
-                                        قبل بهره‌مند شوید.
-                                    </div>
-                                </div>
-                                <div class="rules__item rule">
-                                    <div class="text__semibold text__16">قانون هفتم</div>
-                                    <div class="text__16 text__gray">
-                                        اگر کسی فوت کند باید خانواده یا اطرافیان او با یکی از روش های زیر فوت آن شخص را
-                                        به ما اطلاع دهند.
-                                    </div>
+                            </div>
+                            <div class="rules__item rule">
+                                <div class="text__semibold text__16 text__green">قانون هفتم</div>
+                                <div class="text__16 text__gray">
+                                    اگر کسی فوت کند باید خانواده یا اطرافیان او با یکی از روش های زیر فوت آن شخص را
+                                    به ما اطلاع دهند.
                                 </div>
                             </div>
                             <div class="rules__table">
-                                <div class="title"></div>
-                                <table>
-                                    <tr>
-                                        <th class="text__14 text__semibold">نحوه پرداخت</th>
-                                        <th class="text__14 text__semibold">شریک در ثواب گروه</th>
-                                        <th class="text__14 text__semibold">حمایت بعد از فوت</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="text__14 text__semibold">بدون هیچ پرداختی</td>
-                                        <td class="text__14 text__semibold">دارد</td>
-                                        <td class="text__14 text__semibold">ندارد</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text__14 text__semibold">کمتر از 6 ماه پرداخت</td>
-                                        <td class="text__14 text__semibold">دارد</td>
-                                        <td class="text__14 text__semibold">ندارد</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text__14 text__semibold">پرداخت های نامنظم</td>
-                                        <td class="text__14 text__semibold">دارد</td>
-                                        <td class="text__14 text__semibold">ندارد</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text__14 text__semibold">حداقل 6 ماه پرداخت منظم</td>
-                                        <td class="text__14 text__semibold">دارد</td>
-                                        <td class="text__14 text__semibold">دارد</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text__14 text__semibold">حداقل 6 ماه پرداخت منظم و ادامه پرداخت های برای ادامه مشارکت در امر خیر</td>
-                                        <td class="text__14 text__semibold">دارد</td>
-                                        <td class="text__14 text__semibold">دارد</td>
-                                    </tr>
-                                </table>
+                                <div class="title text__gray text__20 text__semibold">
+                                    جدول وضعیت کاربر
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="text__16 text__semibold text__green">نحوه پرداخت</th>
+                                                <th class="text__12 text__semibold text__green">شریک در ثواب گروه</th>
+                                                <th class="text__12 text__semibold text__green">حمایت بعد از فوت</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td class="text__14 ">بدون هیچ پرداختی</td>
+                                            <td class="text__14 text__green">دارد</td>
+                                            <td class="text__14 text__semibold">ندارد</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text__14 ">کمتر از 6 ماه پرداخت</td>
+                                            <td class="text__14 text__green">دارد</td>
+                                            <td class="text__14 text__red">ندارد</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text__14 ">پرداخت های نامنظم</td>
+                                            <td class="text__14 text__green">دارد</td>
+                                            <td class="text__14 text__red">ندارد</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text__14 ">حداقل 6 ماه پرداخت منظم</td>
+                                            <td class="text__14 text__green">دارد</td>
+                                            <td class="text__14 text__green">دارد</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text__14 ">حداقل 6 ماه پرداخت منظم و ادامه پرداخت های برای ادامه
+                                                مشارکت در امر خیر</td>
+                                            <td class="text__14 text__green">دارد</td>
+                                            <td class="text__14 text__red">دارد</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="rules__table">
+                                <div class="title text__gray text__20 text__semibold">
+                                    جدول وضعیت عضو فوت شده
+                                </div>
+                                <div class="table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="text__16 text__semibold text__green">زمان فوت</th>
+                                                <th class="text__12 text__semibold text__green">شریک در ثواب گروه</th>
+                                                <th class="text__12 text__semibold text__green">حمایت بعد از فوت</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td class="text__14 ">قبل از تکمیل شش ماه پیاپی</td>
+                                            <td class="text__14 text__green">دارد</td>
+                                            <td class="text__14 text__red">ندارد</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text__14 ">قبل از تکمیل شش ماه پیاپی</td>
+                                            <td class="text__14 text__green">دارد</td>
+                                            <td class="text__14  text__red">ندارد</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits bg__white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="benefits__main-headline text__32 text__black">مزایا</div>
+                            <div class="benefits__list">
+                                <div class="benefits__item benefit-item">
+                                    <div class="benefit-item__icon">
+                                        <img src="uploads/baghiat/img/ico-clock.svg" alt="" width="72" height="72">
+                                    </div>
+                                    <div class="benefit-item__content text__gray">
+                                        <div class="benefit-item__title text__16 text__semibold">فقط 45 دقیقه</div>
+                                        <div class="benefit-item__desc text__14">در ماه وقت بگذارید</div>
+                                    </div>
+                                </div>
+                                <div class="benefits__item benefit-item">
+                                    <div class="benefit-item__icon">
+                                        <img src="uploads/baghiat/img/ico-share.svg" alt="" width="72" height="72">
+                                    </div>
+                                    <div class="benefit-item__content text__gray">
+                                        <div class="benefit-item__title text__16 text__semibold">سهیم بودن همه</div>
+                                        <div class="benefit-item__desc text__14">حتی بعد از فوت</div>
+                                    </div>
+                                </div>
+                                <div class="benefits__item benefit-item">
+                                    <div class="benefit-item__icon">
+                                        <img src="uploads/baghiat/img/ico-angle.svg" alt="" width="72" height="72">
+                                    </div>
+                                    <div class="benefit-item__content text__gray">
+                                        <div class="benefit-item__title text__16 text__semibold">ذخیره عمل صالح</div>
+                                        <div class="benefit-item__desc text__14">
+                                            با شراکت در ثواب
+                                            <br>
+                                            همه اعضای طرح
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="benefits__item benefit-item">
+                                    <div class="benefit-item__icon">
+                                        <img src="uploads/baghiat/img/ico-fateme.svg" alt="" width="72" height="72">
+                                    </div>
+                                    <div class="benefit-item__content text__gray">
+                                        <div class="benefit-item__title text__16 text__semibold">انتشار فرهنگ اهل بیت ع
+                                        </div>
+                                        <div class="benefit-item__desc text__14">با کمک به احیای مجالس روضه و هیئت</div>
+                                    </div>
+                                </div>
+                                <div class="benefits__item benefit-item">
+                                    <div class="benefit-item__icon">
+                                        <img src="uploads/baghiat/img/ico-shekh.svg" alt="" width="72" height="72">
+                                    </div>
+                                    <div class="benefit-item__content text__gray">
+                                        <div class="benefit-item__title text__16 text__semibold">مشارکت علما و بزرگان
+                                        </div>
+                                        <div class="benefit-item__desc text__14">افزایش برکت و اعتبار طرح</div>
+                                    </div>
+                                </div>
+                                <div class="benefits__item benefit-item">
+                                    <div class="benefit-item__icon">
+                                        <img src="uploads/baghiat/img/ico-calendar.svg" alt="" width="72" height="72">
+                                    </div>
+                                    <div class="benefit-item__content text__gray">
+                                        <div class="benefit-item__title text__16 text__semibold">نظم و استمرار صدقه
+                                        </div>
+                                        <div class="benefit-item__desc text__14">برای کسانی که صدقه را فراموش می‌کنند
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -269,12 +381,21 @@
 
     <link rel="stylesheet" href="uploads/baghiat/css/bootstrap.min.css" />
     <link rel="stylesheet" href="uploads/baghiat/css/flickity.min.css">
+    <link rel="stylesheet" href="uploads/baghiat/css/plyr.css">
     <link rel="stylesheet" href="uploads/baghiat/scss/main.css">
 
     <script src="uploads/baghiat/js/jquery.js"></script>
     <script src="uploads/baghiat/js/bootstrap.min.js"></script>
     <script src="uploads/baghiat/js/flickity.pkgd.min.js"></script>
+    <script src="uploads/baghiat/js/plyr.js"></script>
     <script src="uploads/baghiat/js/main.js"></script>
+    <script>
+        const player = new Plyr('#player', {
+            controls: ['play', 'progress'], // فقط دکمه Play نمایش داده می‌شود
+            autoplay: false, // پخش خودکار غیرفعال
+            loop: { active: true } // فعال کردن پخش مکرر در صورت نیاز
+        });
+    </script>
 </body>
 
 </html>

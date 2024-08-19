@@ -1713,4 +1713,138 @@ input:focus {
 .bg__white .label--highlight span {
   z-index: 2;
   position: relative;
+}
+
+.rules::before {
+  height: 282px;
+}
+.rules .content {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .rules .content .container {
+    max-width: 960px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+.rules__desc .bordered {
+  position: relative;
+}
+.rules__desc .bordered::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  height: 8px;
+  width: 137px;
+  transform: translateY(0);
+  background-image: url("../img/v-border-5.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  left: 0px;
+}
+.rules__audio {
+  height: 48px;
+  margin-top: 27px;
+  margin-bottom: 62px;
+}
+.rules__item {
+  margin-bottom: 32px;
+}
+.rules__content {
+  padding-bottom: 64px;
+}
+.rules__table {
+  margin-top: 96px;
+}
+.rules__table .title {
+  margin-bottom: 24px;
+}
+
+.table {
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+  padding: 16px;
+}
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+}
+.table::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: calc(100% + 2px);
+  background: linear-gradient(90deg, rgb(6, 182, 117) 0%, #0B6E4A 100%);
+  height: calc(100% + 2px);
+  z-index: -1;
+  border-radius: 9px;
+}
+.table thead {
+  border-bottom: 1px solid #E6E6E6;
+}
+.table td,
+.table th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+}
+
+.benefits {
+  padding: 72px 0;
+}
+.benefits__main-headline {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 64px;
+}
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+
+.benefit-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: calc(33.3333% - 16px);
+}
+.benefit-item__icon {
+  flex-shrink: 0;
+}
+.benefit-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.audio .plyr {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid #344054;
+}
+.audio .plyr--audio .plyr__progress__buffer {
+  background-color: #344054;
+}
+.audio .plyr__controls {
+  padding: 8px 38px 8px 28px !important;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .container,
+  .container-sm {
+    max-width: 100%;
+    width: 720px;
+  }
 }/*# sourceMappingURL=main.css.map */

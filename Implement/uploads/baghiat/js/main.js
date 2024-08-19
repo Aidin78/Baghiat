@@ -138,7 +138,7 @@ function stickyHeader() {
     if (window.pageYOffset > stickyPoint) {
         if (!header.classList.contains("sticky")) {
             header.classList.add("sticky");
-            document.body.style.paddingTop = headerHeight + 'px';
+            document.querySelector(".wrapper ").style.paddingTop = headerHeight + 'px';
             setTimeout(() => {
                 requestAnimationFrame(function () {
                     header.classList.add("show");
@@ -148,7 +148,7 @@ function stickyHeader() {
         }
     } else {
         header.classList.remove("sticky", "show");
-        document.body.style.paddingTop = '0';
+        document.querySelector(".wrapper ").style.paddingTop = '0';
     }
 }
 const questionTitles = document.querySelectorAll('.question-item__title');
