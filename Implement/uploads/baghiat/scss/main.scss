@@ -441,6 +441,10 @@ input {
     z-index: 1000;
     transition: top 0.3s ease-in-out;
 
+    .header__pic {
+      display: none;
+    }
+
     @include respond-to(lg) {
       .phone {
         display: flex !important;

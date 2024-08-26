@@ -129,7 +129,7 @@ img:not([src]) {
   color: var(--primary-color);
 }
 .text__light {
-  color: #818899 !important;
+  font-weight: 210;
 }
 .text__dark-blue {
   color: #21325e;
@@ -746,6 +746,9 @@ input:focus {
   width: 100%;
   z-index: 1000;
   transition: top 0.3s ease-in-out;
+}
+.header.sticky .header__pic {
+  display: none;
 }
 @media (max-width: 991.98px) {
   .header.sticky .phone {

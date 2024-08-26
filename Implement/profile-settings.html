@@ -95,23 +95,7 @@
                 </div>
             </div>
         </header>
-        <div class="after-sign__header">
-            <div class="after-sign__pic">
-                <img src="uploads/baghiat/img/v-symbol.svg" alt="">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="after-sign__text">
-                            <span>طرح ملی</span>
-                            <img src="uploads/baghiat/img/ico-baghiat.svg" alt="">
-                            <span>کانون سفینة النجاة</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="login-page__header login-header">
+        <div class="login-page__header login-header">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -130,13 +114,13 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <section class="main-menu">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="main-menu__list">
-                            <div class="main-menu__item p-relative active">
+                            <div class="main-menu__item p-relative ">
                                 <a href="" class="cover-link"></a>
                                 <div class="main-menu__icon">
                                     <img src="uploads/baghiat/img/ico-home.svg" alt="">
@@ -157,7 +141,7 @@
                                 </div>
                                 <div class="main-menu__title text__16 ">پشتیبانی<span class="notif"></span></div>
                             </div>
-                            <div class="main-menu__item p-relative desktop">
+                            <div class="main-menu__item p-relative desktop active">
                                 <a href="" class="cover-link"></a>
                                 <div class="main-menu__icon">
                                     <img src="uploads/baghiat/img/ico-home.svg" alt="">
@@ -183,64 +167,40 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="box-menu box-menu--lg bg__white">
-                            <a href="" class="cover-link"></a>
-                            <div class="box-menu__icon">
-                                <img src="uploads/baghiat/img/ico-calendar-lg.svg" alt="">
+                        <div class="profile-setting">
+                            <div class="profile-setting__header text__24 text__black">
+                                تنظیمات حساب
                             </div>
-                            <div class="box-menu__content">
-                                <div class="box-menu__header">
-                                    <span class="box-menu__title text__20 text__semibold">
-                                        مدیریت حساب
-                                    </span>
-                                    <span class="box-menu__tag tag text__14">
-                                        1 نفر
-                                    </span>
+                            <div class="profile-setting__links-item">
+                                <div class="link-item">
+                                    <span class="link-item__title text__16">مدیریت اعضا</span>
                                 </div>
-                                <div class="box-menu__info">
-                                    <span class="label label--highlight label--sm text__14">
-                                        <span>24 روز</span>
-                                    </span>
-                                    <span class="text__14">
-                                        از اعتبار باقیمانده
-                                    </span>
+                                <div class="link-item link-item--switch">
+                                    <span class="link-item__title text__16">اعلانات</span>
+                                    <div class="switch-item">
+                                        <input id="switch" class="switch" type="checkbox">
+                                        <label for="switch"></label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="box-menu__arrow">
-                                <img src="uploads/baghiat/img/v-arrow-left-black.svg" alt="" width="24" height="24">
-                            </div>
-                        </div>
-                        <div class="box-menu">
-                            <a href="" class="cover-link"></a>
-                            <div class="box-menu__content">
-                                <div class="box-menu__header">
-                                    <span class="box-menu__title text__16 text__semibold">
-                                        معرفی طرح به دوستان
-                                    </span>
+                                <div class="link-item link-item--switch">
+                                    <span class="link-item__title text__16">ارسال پیامک</span>
+                                    <div class="switch-item">
+                                        <input id="switch" class="switch" type="checkbox">
+                                        <label for="switch"></label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="box-menu__arrow">
-                                <img src="uploads/baghiat/img/v-arrow-left-black.svg" alt="" width="24" height="24">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="gifts">
-                            <div class="gifts__header text__24 text__black label label--highlight label--sm">
-                                خیرات متفرقه
-                            </div>
-                            <div class="gifts__desc text__16">
-                                این بخش ربطی به طرح باقیات الصالحات ندارد
-                            </div>
-                            <div class="gifts__actions">
-                                <a href="" class="button button--green text__15 text__semibold">
-                                    <span>انتخاب نیت</span>
-                                    <img src="uploads/baghiat/img/v-arrow-down-white.svg" alt="" width="24" height="24">
-                                </a>
+                                <div class="link-item link-item--switch">
+                                    <span class="link-item__title text__16">ورود با اثر انگشت</span>
+                                    <div class="switch-item">
+                                        <input id="switch" class="switch" type="checkbox">
+                                        <label for="switch"></label>
+                                    </div>
+                                </div>
+                                <div class="link-item link-item--modal">
+                                    <button class="link-item__title text__16 text__gray" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">خروج از حساب</button>
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -317,6 +277,35 @@
                 </div>
             </div>
         </div>
+
+    </div>
+
+
+    <!-- Modals -->
+    <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content baghiat-modal ">
+                <div class="exit-modal">
+                    <div class="modal-header">
+                        <div class="text__20 text__red text__black">
+                            خروج از حساب
+                        </div>
+                        <div class="desc text__16">
+                            خروج از حساب، فقط دسترسی شما به مدیریت حساب را قطع می کند. می‌توانید دوباره به حساب خود وارد شوید.
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="desc text__20 text__semibold text__center">
+                        آیا از تصمیم خود مطمئن هستید؟
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button  data-bs-dismiss="modal" class="text__16 text__semibold"> انصراف</button>
+                        <button class="button button--green text__semibold text__16 text__white">بله خارج شو</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <link rel="stylesheet" href="uploads/baghiat/css/bootstrap.min.css" />
@@ -326,7 +315,6 @@
     <script src="uploads/baghiat/js/jquery.js"></script>
     <script src="uploads/baghiat/js/bootstrap.min.js"></script>
     <script src="uploads/baghiat/js/main.js"></script>
-
 </body>
 
 </html>
