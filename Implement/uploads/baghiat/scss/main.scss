@@ -1557,10 +1557,15 @@ input {
       }
     }
   }
-
+  &__img{
+    display: none;
+  }
 
   @include respond-to(lg) {
     flex-direction: column;
+    &__content {
+      width: 720px;
+    }
   }
 
   @include respond-to(md) {
@@ -1570,6 +1575,7 @@ input {
     &__content {
       padding: 0;
       max-width: 100%;
+      width: 720px;
     }
 
     &__close {
@@ -1602,6 +1608,14 @@ input {
     li {
       padding-right: 24px;
       padding-left: 24px;
+    }
+
+    &__img{
+      display: flex;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

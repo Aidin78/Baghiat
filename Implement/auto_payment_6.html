@@ -130,79 +130,76 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="choose-payment ">
-                            <div class="choose-payment__header">
-                                <h1 class=" text__24 text__black">
-                                    انتخاب درگاه پرداخت
+                        <div class="auto-payment">
+                            <div class="auto-payment__intro">
+                                <h1 class="text__24 text__black">
+                                    تنظیمات قرارداد
                                 </h1>
                             </div>
-                            <div class="choose-payment__content after-sign--two-col">
+                            <div class="auto-payment__content after-sign--two-col">
                                 <div class="after-sign__right-col subs-manage__peoples ">
-                                    <div class="radio-item">
-                                        <div class="radio-item__radio">
-                                            <input name="bank" type="radio">
-                                            <span></span>
-                                        </div>
-                                        <div class="radio-item__content">
-                                            <label for="" class="text__16 text__semibold text__gray">
-                                                پرداخت خودکار
-                                            </label>
-                                            <span class="desc text__14 text__green">
-                                                هزینه‌ها در پایان اعتبار، خود به خود پرداخت خواهد شد
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="radio-item">
-                                        <div class="radio-item__radio">
-                                            <input name="bank" type="radio">
-                                            <span></span>
-                                        </div>
-                                        <div class="radio-item__content">
-                                            <label for="" class="text__16 text__semibold text__gray">
-                                                پرداخت با درگاه اینترنتی
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="radio-item radio-item--active">
-                                        <div class="radio-item__radio">
-                                            <input name="bank" type="radio" checked>
-                                            <span></span>
-                                        </div>
-                                        <div class="radio-item__content">
-                                            <label for="" class="text__16 text__semibold text__gray">
-                                                کارت به کارت
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="radio-item">
-                                        <div class="radio-item__radio">
-                                            <input name="bank" type="radio">
-                                            <span></span>
-                                        </div>
-                                        <div class="radio-item__content">
-                                            <label for="" class="text__16 text__semibold text__gray">
-                                                پرداخت با کد USSD
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="after-sign__left-col subs-manage__links">
-                                    <div class="phone-footer">
-                                        <div class="phone-footer__container">
-                                            <div class="total-price bg__white">
-                                                <div class="total-price__content">
-                                                    <span class="text__20 text__semibold">جمع کل</span>
-                                                    <span class="text__20 text__semibold text__green">50.000
-                                                        تومان</span>
-                                                </div>
-                                                <div class="total-price__actions">
-                                                    <a href=""
-                                                        class="button button--green text__white text__16 text__semibold">ادامه</a>
+                                    <div class="auto-payment__contract-setting">
+                                        <div class="grave-profile__person grave-person bg__white">
+                                            <div class="grave-person__info">
+                                                <span class="text__14 ">وضعیت قرارداد</span>
+                                                <span class="text__16 text__semibold text__light-green">فعال</span>
+                                            </div>
+                                            <div class="grave-person__switch">
+                                                <div class="switch-item">
+                                                    <input id="switch" class="switch" type="checkbox" checked>
+                                                    <label for="switch"></label>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="grave-profile__person grave-person bg__white">
+                                            <div class="grave-person__info">
+                                                <span class="text__14 ">بانک صادرات</span>
+                                                <span class="text__16 text__semibold text__light-green">حساب 68964106470</span>
+                                            </div>
+                                            <div class="grave-person__switch">
+                                                <button class="people-item__price text__gray  pl-0" data-bs-toggle="modal"
+                                                data-bs-target="#changeBankModal">
+                                                    <span class="text__14">ویرایش </span>
+                                                    <img src="uploads/baghiat/img/ico-edit.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="grave-profile__person grave-person bg__white">
+                                            <div class="grave-person__info">
+                                                <span class="text__14 ">سقف پرداخت ماهانه</span>
+                                                <span class="text__16 text__semibold text__light-green">500.000 تومان</span>
+                                            </div>
+                                            <div class="grave-person__switch">
+                                                <button class="people-item__price text__gray pl-0">
+                                                    <span class="text__14">ویرایش </span>
+                                                    <img src="uploads/baghiat/img/ico-edit.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="grave-profile__person grave-person bg__transparent">
+                                            <div class="grave-person__info">
+                                                <span class="text__16">پایان قرارداد</span>
+                                            </div>
+                                            <div class="grave-person__switch">
+                                                <span class="text__gray text__16 text__semibold">1401/10/28</span>
+                                            </div>
+                                        </div>
+                                        <a href="" class="p-relative button button-border text__red button--red" data-bs-toggle="modal"
+                                        data-bs-target="#deactiveContractModal">
+                                            <span>لغو قرارداد</span>
+                                            <img src="uploads/baghiat/img/ico-trash-red.svg" alt="">
+                                        </a>
                                     </div>
-                                    <span class="choose-payment__desc text__16 text__semibold text__green">اگر از این انتخاب مطمئن هستید<br> فرآیند را ادامه دهید</span>
+                                </div>
+                                <div class="after-sign__left-col subs-manage__links">
+                                    <div class="phone-footer bg__transparent">
+                                        <div class="phone-footer__container bg__transparent">
+                                            <a href="" class="button button--green text__semibold text__16">
+                                                ذخیره تغییرات
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <a href="" class="phone-none bg__white link text__14 text__semibold">بازگشت</a>
                                 </div>
                             </div>
                         </div>
@@ -281,15 +278,121 @@
             </div>
         </div>
     </div>
-
+    <!-- Modals -->
+    <div class="modal fade show" id="bankModal" tabindex="-1" aria-labelledby="bankModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content baghiat-modal baghiat-modal--sm">
+                <div class="choose-modal">
+                    <div class="modal-header pb-0">
+                        <div class="text__20 text__semibold ">
+                            بانک خود را انتخاب کنید
+                        </div>
+                    </div>
+                    <div class="modal-body scrollbar">
+                        <div class="choose-modal__links">
+                            <a href="" class="link text__gray text__20 text__semibold">بانک رسالت</a>
+                            <a href="" class="link text__gray text__20 text__semibold">بانک ملی</a>
+                            <a href="" class="link text__gray text__20 text__semibold">بانک ملت</a>
+                            <a href="" class="link text__gray text__20 text__semibold">بانک صادرات</a>
+                            <a href="" class="link text__gray text__20 text__semibold">بانک سامان</a>
+                            <a href="" class="link text__gray text__20 text__semibold">بانک رفاه کارگران</a>
+                            <a href="" class="link text__gray text__20 text__semibold">بانک کشاورزی</a>
+                            <a href="" class="link text__gray text__20 text__semibold">بانک مهر ایران</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade show" id="contractModal" tabindex="-1" aria-labelledby="contractModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content baghiat-modal baghiat-modal--sm">
+                <div class="choose-modal">
+                    <div class="modal-header">
+                        <div class="text__20 text__semibold">
+                            مدت قرارداد را انتخاب کنید
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="choose-modal__links wider">
+                            <a href="" class="link text__gray text__20 text__semibold">6 ماهه</a>
+                            <a href="" class="link text__gray text__20 text__semibold">12 ماهه</a>
+                            <a href="" class="link text__gray text__20 text__semibold">24 ماهه</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade show" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content baghiat-modal ">
+                <div class="add-price-modal">
+                    <div class="modal-body pb-0">
+                        <div class="add-price__header">
+                            <span class="text__20 text__semibold">سقف پرداخت</span>
+                            <span class="text__16">در ماه، حداکثر چه مبلغی از طریق اتصال به حساب پرداخت شود؟</span>
+                        </div>
+                        <div class="add-price__input">
+                            <label for="" class="text__16 text__semibold text__gray">تومان</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="text__16 text__semibold"> انصراف</button>
+                        <button class="button button--green text__semibold text__16 text__white">ثبت</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modals -->
+    <div class="modal fade show" id="changeBankModal" tabindex="-1" aria-labelledby="changeBankModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content baghiat-modal ">
+                <div class="add-price-modal">
+                    <div class="modal-body pb-0">
+                        <div class="add-price__header">
+                            <span class="text__20 text__semibold">تغییر بانک</span>
+                            <span class="text__20 text__gray">با تغییر بانک، این قرارداد لغو می شود و باید یک قراداد جدید ثبت کنید</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="text__16 text__semibold"> انصراف</button>
+                        <button class="button button--green text__semibold text__16 text__white">ثبت</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade show" id="deactiveContractModal" tabindex="-1" aria-labelledby="deactiveContractModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content baghiat-modal ">
+                <div class="add-price-modal">
+                    <div class="modal-body pb-0">
+                        <div class="add-price__header">
+                            <span class="text__20 text__semibold">لغو قرارداد</span>
+                            <span class="text__20 text__gray">آیا مطمئن هستید؟</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="text__16 text__semibold"> انصراف</button>
+                        <button class="button button--green text__semibold text__16 text__white">ثبت</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <link rel="stylesheet" href="uploads/baghiat/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="uploads/baghiat/css/OverlayScrollbars.min.css">
     <link rel="stylesheet" href="uploads/baghiat/scss/main.css">
     <link rel="stylesheet" href="uploads/baghiat/scss/inpage.css">
 
     <script src="uploads/baghiat/js/jquery.js"></script>
+    <script src="uploads/baghiat/js/OverlayScrollbars.min.js"></script>
     <script src="uploads/baghiat/js/bootstrap.min.js"></script>
     <script src="uploads/baghiat/js/main.js"></script>
-
 </body>
 
 </html>
